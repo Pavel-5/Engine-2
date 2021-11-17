@@ -1,0 +1,10 @@
+<h2>Отзывы</h2>
+
+{% for item in feedbacks %}
+<div>
+    <p>
+        <b>{{ item['author'] }}</b>
+        <br>
+        {{ item['text'] }}</p>
+</div>
+{% endfor %}

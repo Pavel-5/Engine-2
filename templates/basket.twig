@@ -1,0 +1,12 @@
+<h2>Корзина</h2>
+
+{% for item in basket %}
+    <div>
+        <h3>{{ item['title'] }}</h3>
+        <p>price: {{ item['price'] }}</p>
+        <p>quantity: {{ item['quantity'] }}</p>
+        <button>Удалить</button>
+    </div>
+{% else %}
+    Корзина пуста.
+{% endfor %}
